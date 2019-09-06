@@ -2,4 +2,8 @@
     <string name="app_name" translatable="false">Geography Lesson</string>
     <string name="lesson_learnt_label">lesson learnt</string>
     <string name="congrats_text">Congratulations. Now, enjoy your free time.</string>
+    <string name="es_conutry_name">Spain</string>
+    <string name="en_conutry_name">United States of America</string>
+    <string name="es_country_description">Spain is a country mostly located in Europe. Its continental European territory is situated on the Iberian Peninsula. Its territory also includes two archipelagoes: the Canary Islands off the coast of Africa, and the Balearic Islands in the Mediterranean Sea. The African enclaves of Ceuta, Melilla, and Peñón de Vélez de la Gomera make Spain the only European country to have a physical border with an African country (Morocco).</string>
+    <string name="en_country_description">USA is a country comprising 50 states, a federal district, five major self-governing territories, and various possessions. At 3.8 million square miles (9.8 million km2), the United States is the world\'s third or fourth largest country by total area[d] and is slightly smaller than the entire continent of Europe, which is 3.9 million square miles (10.1 million km2). The capital is Washington, D.C., and the most populous city is New York City</string>
 </resources>

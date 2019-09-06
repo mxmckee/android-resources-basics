@@ -7,6 +7,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="EnglishTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/enColorPrimary</item>
+        <item name="colorPrimaryDark">@color/enColorPrimaryDark</item>
+        <item name="colorAccent">@color/enColorAccent</item>
+    </style>
+
+    <style name="SpanishTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/esColorPrimary</item>
+        <item name="colorPrimaryDark">@color/esColorPrimaryDark</item>
+        <item name="colorAccent">@color/esColorAccent</item>
+    </style>
+
     <style name="AppTheme.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">20sp</item>
@@ -22,7 +34,7 @@
     <style name="AppTheme.Button" parent="TextAppearance.AppCompat.Button">
         <!-- TODO 7: Define button_color resource. Remember, the button will have a specific color for pressed state and another one for the rest -->
         <!-- TODO 8: Once defined, uncomment the following line -->
-        <!--item name="android:backgroundTint">@color/button_color</item-->
+        <item name="android:backgroundTint">@color/button_color</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:paddingStart">24dp</item>
         <item name="android:paddingEnd">24dp</item>

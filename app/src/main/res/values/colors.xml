@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorText">#888</color>
+    <color name="enColorPrimary">#3498db</color>
+    <color name="enColorPrimaryDark">#2980b9</color>
+    <color name="enColorAccent">#27ae60</color>
+    <color name="esColorPrimary">#e74c3c</color>
+    <color name="esColorPrimaryDark">#c0392b</color>
+    <color name="esColorAccent">#f39c12</color>
 </resources>
