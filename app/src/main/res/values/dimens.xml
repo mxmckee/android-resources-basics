@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="longTextTextSize">16sp</dimen>
+    <dimen name="longTextLineHeight">24dp</dimen>
+    <dimen name="buttonPaddingStart">24dp</dimen>
+    <dimen name="buttonPaddingEnd">24dp</dimen>
+    <dimen name="activityMainPadding">24dp</dimen>
+    <dimen name="imageViewWidth">128dp</dimen>
+    <dimen name="imageViewHeight">0dp</dimen>
+    <dimen name="imageViewMarginBottom">12dp</dimen>
+    <dimen name="textViewMarginBottom">24dp</dimen>
+</resources>
