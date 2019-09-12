@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (Locale.getDefault().getLanguage().equals("es")) {
-            setTheme(R.style.SpanishTheme);
+            setSpanishTheme();
         }
-        else if (Locale.getDefault().getLanguage().equals("en")){
-            setTheme(R.style.EnglishTheme);
+        else {
+            setEnglishTheme();
         }
 
         super.onCreate(savedInstanceState);
@@ -42,39 +42,55 @@ public class MainActivity extends AppCompatActivity {
         rootLayout = findViewById(R.id.root_layout);
 
         if (Locale.getDefault().getLanguage().equals("es")) {
-            image = findViewById(R.id.country_image);
-            graphic = getResources().getDrawable(R.drawable.ic_spain, null);
-            image.setImageDrawable(graphic);
-
-            countryName = findViewById(R.id.country_title_text);
-            text = getResources().getString(R.string.es_conutry_name);
-            countryName.setText(text);
-            countryName.setTextColor(getResources().getColor(R.color.esColorAccent, null));
-
-            countryDescription = findViewById(R.id.country_description_text);
-            text = getResources().getString(R.string.es_country_description);
-            countryDescription.setText(text);
-
-            button = findViewById(R.id.lesson_learnt_button);
-            button.setBackgroundTintList(getResources().getColorStateList(R.color.button_color_es, null));
+            setSpanishElements();
         }
-        else if (Locale.getDefault().getLanguage().equals("en")){
-            image = findViewById(R.id.country_image);
-            graphic = getResources().getDrawable(R.drawable.ic_usa, null);
-            image.setImageDrawable(graphic);
-
-            countryName = findViewById(R.id.country_title_text);
-            text = getResources().getString(R.string.en_conutry_name);
-            countryName.setText(text);
-            countryName.setTextColor(getResources().getColor(R.color.enColorAccent, null));
-
-            countryDescription = findViewById(R.id.country_description_text);
-            text = getResources().getString(R.string.en_country_description);
-            countryDescription.setText(text);
-
-            button = findViewById(R.id.lesson_learnt_button);
-            button.setBackgroundTintList(getResources().getColorStateList(R.color.button_color_en, null));
+        else {
+            setEnglishElements();
         }
+    }
+
+    public void setEnglishTheme() {
+        setTheme(R.style.EnglishTheme);
+    }
+
+    public void setSpanishTheme() {
+        setTheme(R.style.SpanishTheme);
+    }
+
+    public void setEnglishElements() {
+        image = findViewById(R.id.country_image);
+        graphic = getResources().getDrawable(R.drawable.ic_usa, null);
+        image.setImageDrawable(graphic);
+
+        countryName = findViewById(R.id.country_title_text);
+        text = getResources().getString(R.string.en_conutry_name);
+        countryName.setText(text);
+        countryName.setTextColor(getResources().getColor(R.color.enColorAccent, null));
+
+        countryDescription = findViewById(R.id.country_description_text);
+        text = getResources().getString(R.string.en_country_description);
+        countryDescription.setText(text);
+
+        button = findViewById(R.id.lesson_learnt_button);
+        button.setBackgroundTintList(getResources().getColorStateList(R.color.button_color_en, null));
+    }
+
+    public void setSpanishElements() {
+        image = findViewById(R.id.country_image);
+        graphic = getResources().getDrawable(R.drawable.ic_spain, null);
+        image.setImageDrawable(graphic);
+
+        countryName = findViewById(R.id.country_title_text);
+        text = getResources().getString(R.string.es_conutry_name);
+        countryName.setText(text);
+        countryName.setTextColor(getResources().getColor(R.color.esColorAccent, null));
+
+        countryDescription = findViewById(R.id.country_description_text);
+        text = getResources().getString(R.string.es_country_description);
+        countryDescription.setText(text);
+
+        button = findViewById(R.id.lesson_learnt_button);
+        button.setBackgroundTintList(getResources().getColorStateList(R.color.button_color_es, null));
     }
 
     public void onLessonLearntClicked(View view) {
